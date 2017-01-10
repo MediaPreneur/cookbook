@@ -53,7 +53,7 @@ The same can be achieved by calling the broadcast REST API:
 
 ```js
 // The API is secured, we need to authenticate ourselves
-const token = bp.security.login('admin', bp.botfile.login.password, '127.0.0.1')
+const token = bp.security.login('admin', bp.botfile.login.password, '127.0.0.1').token
 
 // We use the "axios" library to make API calls
 const api = axios.create({
